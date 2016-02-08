@@ -1,0 +1,22 @@
+{
+  "name": "fred-svg",
+  "version": "0.0.0",
+  "description": "Parse SVG files into game engine compatible objects.",
+  "main": "source/fredSvg.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/AutomateAllTheThings/fred-svg"
+  },
+  "keywords": [
+    "svg",
+    "game",
+    "physics",
+    "parse",
+    "fred"
+  ],
+  "author": "dcrockwell",
+  "license": "MIT"
+}
