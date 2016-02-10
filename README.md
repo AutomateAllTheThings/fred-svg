@@ -1,15 +1,17 @@
-<div align=center>
-![](fred-svg.svg)
-</div>
+![](fred-svg.png)
 
 # Description
 
-FredSVG parses SVG files into data structures that can be used in graphics and physics applications.
+FredSVG parses SVG files into data structures that are useful to graphics and physics engines. In short, it can help you use SVG files as a file format for video game levels.
+
+It is integration-agnostic, meaning it can be used in any game development system that supports Javascript, including browsers, Node.js, Unity, and more.
 
 # Installation
 
+FredSVG is installed through the Node Package Manager (npm):
+
 ``` shell
-npm install fred-svg --save
+$ npm install fred-svg --save
 ```
 
 # Getting Started
@@ -17,7 +19,7 @@ npm install fred-svg --save
 ## Flat Layers Example
 
 ``` javascript
-import SVG from "fred-svg";
+import Fred from "fred-svg";
 
 /**
  * level.svg contains 3 layers called:
@@ -25,7 +27,7 @@ import SVG from "fred-svg";
  *   "physics: solid, density=1.0, friction=0.5"
  *   "background"
  */
-const level = new SVG("./svg/level.svg");
+const level = new Fred("./svg/level.svg");
 
 level.layers; // ["foreground", "physics", "background"]
 
@@ -36,18 +38,18 @@ level.physics.friction; // 0.5
 ## Nested Layers Example
 
 ``` javascript
-import SVG from "fred-svg";
+import Fred from "fred-svg";
 
 /**
  * level.svg contains nested layer like so:
  *   "foreground"
  *       "trees"
  *   "stage: solid, density=1.0, friction=0.5"
- *   		 "player: cameraLock"
- *   		 "ambient"
- *   		     "bugs"
- *   		     "birds"
- *   		 "npcs"
+ *       "player: cameraLock"
+ *       "ambient"
+ *           "bugs"
+ *           "birds"
+ *   "npcs"
  *   		 		 "shopkeeper"
  *   		 		 "innkeeper"
  *   		 "items:interactive"
@@ -59,7 +61,7 @@ import SVG from "fred-svg";
  *       "mountains"
  *       "sky"
  */
-const level = new SVG("./svg/level.svg");
+const level = new Fred("./svg/level.svg");
 
 level.layers; // ["foreground", "stage", "background"]
 

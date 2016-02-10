@@ -1,22 +1,57 @@
 {
+  "generatorVersion": "0.2.21",
   "name": "fred-svg",
-  "version": "0.0.0",
-  "description": "Parse SVG files into game engine compatible objects.",
+  "version": "0.1.0",
+  "description": "FredSVG parses SVG files into data structures that can be used in graphics and physics applications.",
   "main": "source/fredSvg.js",
   "scripts": {
     "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "github.com/AutomateAllTheThings/fred-svg"
+    "url": "https://github.com/AutomateAllTheThings/fred-svg.git"
   },
   "keywords": [
-    "svg",
-    "game",
-    "physics",
-    "parse",
-    "fred"
+    "fred-svg"
   ],
-  "author": "dcrockwell",
-  "license": "MIT"
+  "author": "AutomateAllTheThings",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AutomateAllTheThings/fred-svg/issues"
+  },
+  "homepage": "https://github.com/AutomateAllTheThings/fred-svg",
+  "devDependencies": {
+    "babel": "^6.5.1",
+    "babel-core": "^6.5.1",
+    "babel-eslint": "^4.1.8",
+    "babel-loader": "^6.2.2",
+    "babel-preset-es2015": "^6.5.0",
+    "brfs": "^1.4.3",
+    "browser-sync": "^2.11.1",
+    "chai": "^3.0.0",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "json-loader": "^0.5.4",
+    "karma": "^0.13.19",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-mocha": "^0.2.1",
+    "karma-sinon-chai": "^1.1.0",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.2.5",
+    "transform-loader": "^0.2.3",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-stream": "^3.1.0"
+  },
+  "dependencies": {
+    "proven": "^0.2.0",
+    "xml2js": "^0.4.16",
+    "xmldom": "^0.1.22",
+    "xpath": "0.0.21"
+  }
 }
